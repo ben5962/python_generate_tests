@@ -3,7 +3,7 @@ import astor
 import ast
 import typing
 import pathlib
-
+import sys
 
 __all__ = ['produire_tests']
 
@@ -199,11 +199,11 @@ class Module2Arbre(object):
             
         
 
-def exemple():
-    produire_tests("Environnement.py")
+def main(nom_fichier):
+    produire_tests(nom_fichier)
 
 if __name__ == '__main__':
-    exemple()
+    main(sys.argv[1])
                                                                                                                   
 
     
